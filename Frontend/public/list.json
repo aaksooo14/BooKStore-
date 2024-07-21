@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Story Book",
+    "title": "Discover a world of books at your fingertips",
+    "price": 0,
+    "category": "Male",
+    "image": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1721202789~exp=1721206389~hmac=8ddfb57bf5f0f8e832612c84a122ede3a4edd141b3b5e5953ace55c08ea5c6b9&w=740"
+  },
+  {
+    "id": 2,
+    "name": "Fiction Novel",
+    "title": "Explore thrilling adventures in fiction",
+    "price": 9.99,
+    "category": "Male",
+    "image": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1721202789~exp=1721206389~hmac=8ddfb57bf5f0f8e832612c84a122ede3a4edd141b3b5e5953ace55c08ea5c6b9&w=740"
+  },
+  {
+    "id": 3,
+    "name": "Women",
+    "title": "Discover inspiring life stories",
+    "price": 12.5,
+    "category": "Female",
+    "image": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1721202789~exp=1721206389~hmac=8ddfb57bf5f0f8e832612c84a122ede3a4edd141b3b5e5953ace55c08ea5c6b9&w=740"
+  },
+  {
+    "id": 4,
+    "name": "Child Book",
+    "title": "Spark imagination with fun stories",
+    "price": 8.75,
+    "category": "Female",
+    "image": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1721202789~exp=1721206389~hmac=8ddfb57bf5f0f8e832612c84a122ede3a4edd141b3b5e5953ace55c08ea5c6b9&w=740"
+  },
+  {
+    "id": 5,
+    "name": "Self Guide",
+    "title": "Achieve personal growth with expert advice",
+    "price": 14.99,
+    "category": "All",
+    "image": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1721202789~exp=1721206389~hmac=8ddfb57bf5f0f8e832612c84a122ede3a4edd141b3b5e5953ace55c08ea5c6b9&w=740"
+  },
+  {
+    "id": 6,
+    "name": "History Book",
+    "title": "Uncover the past through historical accounts",
+    "price": 11.25,
+    "category": "All",
+    "image": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1721202789~exp=1721206389~hmac=8ddfb57bf5f0f8e832612c84a122ede3a4edd141b3b5e5953ace55c08ea5c6b9&w=740"
+  },
+  {
+    "id": 7,
+    "name": "Science Fiction",
+    "title": "Embark on futuristic journeys",
+    "price": 10.5,
+    "category": "Female",
+    "image": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1721202789~exp=1721206389~hmac=8ddfb57bf5f0f8e832612c84a122ede3a4edd141b3b5e5953ace55c08ea5c6b9&w=740"
+  },
+  {
+    "id": 8,
+    "name": "Cookbook",
+    "title": "Delight in culinary adventures",
+    "price": 19.99,
+    "category": "cooking",
+    "image": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1721202789~exp=1721206389~hmac=8ddfb57bf5f0f8e832612c84a122ede3a4edd141b3b5e5953ace55c08ea5c6b9&w=740"
+  },
+  {
+    "id": 9,
+    "name": "Poetry",
+    "title": "Experience the beauty",
+    "price": 7.99,
+    "category": "poetry",
+    "image": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1721202789~exp=1721206389~hmac=8ddfb57bf5f0f8e832612c84a122ede3a4edd141b3b5e5953ace55c08ea5c6b9&w=740"
+  },
+  {
+    "id": 10,
+    "name": "Thriller Novel",
+    "title": "Experience heart-pounding suspense",
+    "price": 15.75,
+    "category": "fiction",
+    "image": "https://img.freepik.com/free-vector/books-stack-realistic_1284-4735.jpg?t=st=1721202789~exp=1721206389~hmac=8ddfb57bf5f0f8e832612c84a122ede3a4edd141b3b5e5953ace55c08ea5c6b9&w=740"
+  }
+]
