@@ -1,24 +1,49 @@
 
-import list from '../../public/list.json';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import axios from "axios";
 import Cards from './Cards';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Freebook = () => {
 
+    const [book, setBook] = useState([]);
+
+    useEffect(() => {
+        const getBook = async () => {
+            try {
+                const res = await axios.get("http://localhost:3000/book");
+                console.log(res.data);
+
+                const data = res.data.filter((data) => {
+                    if (activeCategory === 'All') {
+                        return true;
+                    }
+                    else {
+                        return data.category === activeCategory;
+                    }
+                }
+                );
+
+                setBook(data)
+            } catch (error) {
+                console.log("error", error)
+            }
+        }
+        getBook();
+    }, []);
+
     const [activeCategory, setActiveCategory] = useState('All');
 
-    const filterData = list.filter((data) => {
-        if (activeCategory === 'All') {
-            return true;
-        }
-        else {
-            return data.category === activeCategory;
-        }
-    }
-    );
+    // const filterData = list.filter((data) => {
+    //     if (activeCategory === 'All') {
+    //         return true;
+    //     }
+    //     else {
+    //         return data.category === activeCategory;
+    //     }
+    // }
+    // );
 
     const handleCategoryClick = (category) => {
         setActiveCategory(category); // Update active category state
@@ -39,7 +64,7 @@ const Freebook = () => {
                 <div className='mt-5'>
                     <div className="grid grid-cols-1 md:grid-cols-3 w-full ">
                         {
-                            filterData.map((item) => (
+                            book.map((item) => (
                                 <Cards className='carousel-item' item={item} key={item.id} />
                             ))
                         }

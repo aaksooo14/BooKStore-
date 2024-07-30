@@ -1,19 +1,40 @@
 import { Link } from "react-router-dom"
 import Login from "./Login"
 import { useForm } from "react-hook-form";
-
-
-
+import axios from "axios";
 
 
 const Signup = () => {
 
     const { register, handleSubmit, formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
+    const onSubmit = async (data) => {
+        const userInfo = {
+            fulname: data.fulname,
+            email: data.email,
+            password: data.password
+        }
+        // console.log(data)
+
+
+        await axios.post("http://localhost:3000/User/signup", userInfo)
+            .then((res) => {
+                console.log(res.data)
+                if (res.data) {
+                    alert("signup sucessfull")
+                }
+            }).catch((error) => {
+                if (error.response) {
+                    console.log("error", error)
+                    alert("error" + error.response.data.message)
+                }
+            })
+
+
+    }
 
     return (
         <>
-            <div >
+            <div className="mt-25">
                 <div method="dialog" >
                     {/* if there is a button in form, it will close the modal */}
                     <Link to='/'>
@@ -26,9 +47,9 @@ const Signup = () => {
                         <div className="mb-4">
                             <label htmlFor="email" className="block text-sm font-medium text-gray-700">Name</label>
                             <input id="email" type="text" placeholder="Akash" className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                                {...register("name", { required: true })} />
+                                {...register("fulname", { required: true })} />
                             <br />
-                            {errors.name && <span className="text-red-500">This field is required</span>}
+                            {errors.fulname && <span className="text-red-500">This field is required</span>}
                         </div>
 
 
@@ -58,12 +79,13 @@ const Signup = () => {
 
                                 <a href='/' className="text-pink-500 hover:underline">Login</a>
 
-                                <Login />
+
 
 
                             </span>
                         </div>
                     </form>
+                    <Login />
 
                 </div >
             </div >

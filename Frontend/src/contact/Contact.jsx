@@ -1,9 +1,12 @@
+import Navbar from "../components/Navbar"
+import Footer from '../components/Footer'
 
 const Contact = () => {
     return (
         <>
-            <div >
-                <div method="dialog" >
+            <Navbar />
+            <div className="mt-20">
+                <div method="dialog dark:bg-slate-900 dark:text-white" >
                     {/* if there is a button in form, it will close the modal */}
 
                     <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2" >✕</button>
@@ -46,6 +49,7 @@ const Contact = () => {
 
                 </div >
             </div >
+            <Footer />
 
         </>
     )
